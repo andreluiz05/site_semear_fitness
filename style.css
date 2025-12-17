@@ -341,6 +341,7 @@ body {
   width: 100%;
   max-width: 320px;
   margin-bottom: 25px;
+     transform: translateY(-20px);
 
   border-radius: 18px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
@@ -938,4 +939,5 @@ h2 {
     animation: none;
   }
 }
+
 
