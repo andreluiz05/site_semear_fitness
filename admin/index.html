@@ -9,12 +9,14 @@
     window.CMS_MANUAL_INIT = true;
   </script>
 
-  <script src="https://unpkg.com/decap-cms@3.9.0/dist/decap-cms.js"></script>
+  <!-- Versão mais recente do Decap CMS -->
+  <script src="https://unpkg.com/decap-cms@3.13.0/dist/decap-cms.js"></script>
 </head>
 <body>
 
   <script>
-    CMS.init();
+    // Carrega o config.yml explicitamente
+    CMS.init({ config: '/admin/config.yml' });
   </script>
 
 </body>
