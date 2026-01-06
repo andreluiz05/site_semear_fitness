@@ -2,6 +2,9 @@ backend:
   name: github
   repo: andreluiz05/semearfitness
   branch: main
+  auth_scope: repo
+
+site_url: https://semearfitness.com.br
 
 media_folder: "/"
 public_folder: "/"
