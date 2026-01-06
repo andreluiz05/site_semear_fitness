@@ -2,6 +2,7 @@ backend:
   name: github
   repo: andreluiz05/semearfitness
   branch: main
+  auth_type: pkce
   auth_scope: repo
 
 site_url: https://semearfitness.com.br
@@ -12,12 +13,14 @@ public_folder: "/"
 collections:
   - name: "home"
     label: "Página Inicial"
-    file: "data/home.yml"
-
-    fields:
-      - { label: "Título do Hero", name: "hero_titulo", widget: "string" }
-      - { label: "Descrição do Hero", name: "hero_descricao", widget: "text" }
-      - { label: "Slogan", name: "hero_slogan", widget: "string" }
-      - { label: "WhatsApp", name: "whatsapp", widget: "string" }
-      - { label: "Imagem do Hero", name: "hero_imagem", widget: "image" }
-      - { label: "Imagem dos Planos", name: "imagem_planos", widget: "image" }
+    files:
+      - label: "Home"
+        name: "home"
+        file: "data/home.yml"
+        fields:
+          - { label: "Título do Hero", name: "hero_titulo", widget: "string" }
+          - { label: "Descrição do Hero", name: "hero_descricao", widget: "text" }
+          - { label: "Slogan", name: "hero_slogan", widget: "string" }
+          - { label: "WhatsApp", name: "whatsapp", widget: "string" }
+          - { label: "Imagem do Hero", name: "hero_imagem", widget: "image" }
+          - { label: "Imagem dos Planos", name: "imagem_planos", widget: "image" }
