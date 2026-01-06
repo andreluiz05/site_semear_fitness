@@ -9,8 +9,6 @@ site_url: https://semearfitness.com.br
 
 media_folder: "/"
 public_folder: "/"
-media_library:
-  name: local
 
 collections:
   - name: home
