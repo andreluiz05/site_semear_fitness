@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: andreluiz05/semearfitness
+  repo: andreluiz05/xxxxxxx
   branch: main
   auth_endpoint: https://decap-oauth.netlify.app/.netlify/functions/auth
 
