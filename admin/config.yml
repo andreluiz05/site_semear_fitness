@@ -2,10 +2,9 @@ backend:
   name: github
   repo: andreluiz05/semearfitness
   branch: main
-  auth_type: pkce
-  auth_scope: repo
 
-site_url: https://semearfitness.com.br
+site_url: https://dainty-malasada-e77663.netlify.app
+display_url: https://semearfitness.com.br
 
 media_folder: "/"
 public_folder: "/"
