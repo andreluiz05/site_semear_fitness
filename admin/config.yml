@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway # Melhor usar git-gateway se estiver no Netlify (mais estável que o servidor oauth externo)
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "assets/uploads"
+
+collections:
+  - name: "home"
+    label: "Página Inicial"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "data/home.json" # <--- MUDAMOS DE .yml PARA .json
+        fields:
+          - { label: "Título do Hero", name: "hero_titulo", widget: "string" }
+          - { label: "Descrição do Hero", name: "hero_descricao", widget: "text" }
+          - { label: "Slogan", name: "hero_slogan", widget: "string" }
+          - { label: "WhatsApp", name: "whatsapp", widget: "string" }
+          - { label: "Imagem do Hero", name: "hero_imagem", widget: "image" }
+          - { label: "Imagem dos Planos", name: "imagem_planos", widget: "image" }
