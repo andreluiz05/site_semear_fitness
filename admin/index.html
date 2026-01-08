@@ -6,8 +6,13 @@
 </head>
 <body>
 
-  <h1>Carregando painel...</h1>
+  <h2>Carregando painel...</h2>
   <div id="nc-root"></div>
+
+  <script>
+    // 🚫 Bloqueia detecção automática de Netlify
+    window.netlifyIdentity = null;
+  </script>
 
   <script src="https://unpkg.com/decap-cms@3.0.0/dist/decap-cms.js"></script>
   <script>
