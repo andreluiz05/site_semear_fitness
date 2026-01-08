@@ -2,7 +2,8 @@ backend:
   name: github
   repo: andreluiz05/semearfitness
   branch: main
-  auth_endpoint: https://decap-oauth.netlify.app/.netlify/functions/auth
+  base_url: https://decap-oauth.netlify.app
+  auth_endpoint: /auth
 
 media_folder: "assets/img"
 public_folder: "/assets/img"
