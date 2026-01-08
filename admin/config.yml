@@ -2,18 +2,22 @@ backend:
   name: git-gateway
   branch: main
 
+# Onde as imagens novas serão salvas quando você fizer upload
 media_folder: "assets/img"
-public_folder: "/assets/img"
+# Como o caminho da imagem será gravado no JSON
+public_folder: "assets/img"
 
 collections:
-  - name: "home"
-    label: "Página Inicial"
+  - name: "paginas"
+    label: "Páginas do Site"
     files:
-      - label: "Conteúdo da Home"
+      - label: "Página Inicial"
         name: "home"
-        file: "data/home.json"
+        file: "data/home.json" # <--- O CMS vai editar este arquivo
         fields:
           - { label: "Título Principal", name: "hero_titulo", widget: "string" }
           - { label: "Descrição", name: "hero_descricao", widget: "text" }
-          - { label: "WhatsApp (só números)", name: "whatsapp", widget: "string" }
-          - { label: "Imagem de Fundo", name: "hero_imagem", widget: "image" }
+          - { label: "Slogan", name: "hero_slogan", widget: "string" }
+          - { label: "WhatsApp (somente números)", name: "whatsapp", widget: "string" }
+          - { label: "Imagem Principal", name: "hero_imagem", widget: "image" }
+          - { label: "Imagem dos Planos", name: "imagem_planos", widget: "image" }
